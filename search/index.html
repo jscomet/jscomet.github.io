@@ -39,7 +39,6 @@
   
     <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
-  
   <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
@@ -57,16 +56,6 @@
   
   <style>
     
-      .kratos-cover.kratos-cover-2 {
-        background-image: url('/images/banner.webp');
-      }
-    
-    
-      @media(min-width:768px) {
-        body.custom-background {
-          background-image: url('/images/bg.webp');
-        }
-      }
     
   </style>
   
@@ -84,6 +73,14 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
+                                    
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                        
                                     
                                 
                             </ul>
@@ -142,10 +139,10 @@
 <div id="result-posts">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <div class="kratos-post-content">
-            <p>搜索多个关键词时请用空格分割，例如「日常 前端 天文」这样；</p>
+            <p>搜索多个关键词时请用空格分割，例如「hexo 日常 前端」这样；</p>
             <p>您也可以使用这些标签碰碰运气哦~</p>
             <p class="search-demo-tags">
-                <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 18px; color: #b2b7be">日常</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 21px; color: #8f96a3">前端</a> <a href="/tags/%E5%A4%A9%E6%96%87/" style="font-size: 18px; color: #b2b7be">天文</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 18px; color: #b2b7be">其他</a> <a href="/tags/hexo/" style="font-size: 24px; color: #6c7588">hexo</a>
+                <a href="/tags/hexo/" style="font-size: 24px; color: #6c7588">hexo</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 18px; color: #b2b7be">日常</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 21px; color: #8f96a3">前端</a> <a href="/tags/%E5%A4%A9%E6%96%87/" style="font-size: 18px; color: #b2b7be">天文</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 18px; color: #b2b7be">其他</a>
             </p>
         </div>
     </div>
@@ -284,14 +281,17 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 footer-list text-center">
                     <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
                         
                         
-                        <li><a target="_blank" rel="nofollow" href="https://t.me/CandyUnion"><i class="fa fa-telegram"></i></a></li>
                         
                         
                         
-                        <li><a target="_blank" rel="me" href="https://nya.one/@Candinya"><i class="fa fa fa-share-alt-square"></i></a></li>
-                        <li><a target="_blank" rel="nofollow" href="https://github.com/Candinya"><i class="fa fa-github"></i></a></li>
+                        
+                        
+                        
+                        
+                        <!-- New links -->
                         
                     </ul>
                     <ul class="kratos-copyright">
@@ -328,6 +328,7 @@
                     <div class="box theme-box" id="darkmode-switch">
                         <span class="fa fa-adjust"></span>
                     </div>
+                
                 
                 
             </div>
@@ -371,7 +372,6 @@
 
     <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
 
