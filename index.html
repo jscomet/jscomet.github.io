@@ -166,6 +166,11 @@
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2023/01/30/hexo/hexo%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/" class="leancloud_visitors" data-flag-title="hexo常见指令">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -237,6 +242,11 @@ shift+tab返回
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2023/01/30/%E5%85%B6%E4%BB%96/Typora%E4%BD%BF%E7%94%A8/" class="leancloud_visitors" data-flag-title="Typora的快捷键使用">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -290,6 +300,11 @@ shift+tab返回
                         </a>
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2023/01/18/%E6%97%A5%E5%B8%B8/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/" class="leancloud_visitors" data-flag-title="前端学习日记">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
                             
                         
                         
@@ -349,6 +364,11 @@ shift+tab返回
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2023/01/16/%E6%97%A5%E5%B8%B8/%E6%88%91%E5%8E%BB%E5%8F%82%E5%8A%A0%E5%91%BD%E5%90%8D%E5%A4%A9%E4%BD%93%E7%9A%84%E6%B4%BB%E5%8A%A8%E5%B1%85%E7%84%B6%E6%88%90%E5%8A%9F%E4%BA%86/" class="leancloud_visitors" data-flag-title="我去参加命名天体活动，居然进入优秀提名">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -405,6 +425,11 @@ shift+tab返回
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2023/01/13/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0%E5%89%8D%E7%AB%AF/" class="leancloud_visitors" data-flag-title="开始学习前端">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -460,6 +485,11 @@ shift+tab返回
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2023/01/13/hexo/test/" class="leancloud_visitors" data-flag-title="hexo显示图片的方法">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -513,6 +543,11 @@ shift+tab返回
                         </a>
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2022/11/02/hexo/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/" class="leancloud_visitors" data-flag-title="hexo博客的搭建">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
                             
                         
                         
@@ -569,6 +604,11 @@ shift+tab返回
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2022/10/31/%E6%97%A5%E5%B8%B8/My%20First%20Blog/" class="leancloud_visitors" data-flag-title="My Firsrt Blog">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -589,6 +629,30 @@ shift+tab返回
 
     <div class="hidden">
         <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
+        
+            <div id="v-comments" class="post-comments"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Valine({
+                el: '#v-comments',
+                appId: 'j28XHxGo54et1lwSRg3sSmmv-9Nh9j0Va',
+                appKey: 'UUy2UQ9hZwMJbNX786yepyrW',
+                visitor: true,
+                enableQQ: false,
+                path: '/index.html'
+            });
+        }
+        if (typeof Valine === 'undefined') {
+            const src = '/vendors/valine@1.4.18/dist/Valine.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
+
         
     </div>
 

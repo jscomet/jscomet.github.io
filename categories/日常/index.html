@@ -191,6 +191,11 @@
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2023/01/18/%E6%97%A5%E5%B8%B8/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/" class="leancloud_visitors" data-flag-title="前端学习日记">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -249,6 +254,11 @@
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2023/01/16/%E6%97%A5%E5%B8%B8/%E6%88%91%E5%8E%BB%E5%8F%82%E5%8A%A0%E5%91%BD%E5%90%8D%E5%A4%A9%E4%BD%93%E7%9A%84%E6%B4%BB%E5%8A%A8%E5%B1%85%E7%84%B6%E6%88%90%E5%8A%9F%E4%BA%86/" class="leancloud_visitors" data-flag-title="我去参加命名天体活动，居然进入优秀提名">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -304,6 +314,11 @@
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2022/10/31/%E6%97%A5%E5%B8%B8/My%20First%20Blog/" class="leancloud_visitors" data-flag-title="My Firsrt Blog">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -324,6 +339,30 @@
 
     <div class="hidden">
         <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
+        
+            <div id="v-comments" class="post-comments"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Valine({
+                el: '#v-comments',
+                appId: 'j28XHxGo54et1lwSRg3sSmmv-9Nh9j0Va',
+                appKey: 'UUy2UQ9hZwMJbNX786yepyrW',
+                visitor: true,
+                enableQQ: false,
+                path: '/categories/%E6%97%A5%E5%B8%B8/index.html'
+            });
+        }
+        if (typeof Valine === 'undefined') {
+            const src = '/vendors/valine@1.4.18/dist/Valine.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
+
         
     </div>
 
